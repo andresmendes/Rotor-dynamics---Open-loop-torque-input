@@ -6,7 +6,7 @@
 clear ; close all ; clc
 
 %% Circle
-th_c    = 0:0.01:2*pi;          % angle for sweep               [rad]
+th_c    = 0:0.01:2*pi+0.1;      % angle for sweep               [rad]
 r       = 1;                    % Radius                        [m]
 x_c     = r*cos(th_c);          % Position x                    [m]
 y_c     = r*sin(th_c);          % Position y                    [m]
