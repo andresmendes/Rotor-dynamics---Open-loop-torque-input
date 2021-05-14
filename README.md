@@ -2,7 +2,7 @@
 # Rotor dynamics - Open loop torque input
 Simulation and animation of a rotor with open loop torque input.
 
-Watch animation on YouTube: https://youtu.be/i045k_VH-3Y
+Watch animation on YouTube: https://youtu.be/B37RabFFzJw
 
 ![Logo](https://www.mathworks.com/matlabcentral/mlc-downloads/downloads/9094ebb9-ba6c-4820-a52b-d14ec12e46f2/74c83653-b8b4-48b9-8589-6bd27abe1a71/images/1620950150.png)
 
