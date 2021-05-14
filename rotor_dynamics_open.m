@@ -93,9 +93,7 @@ function [dz, torque] = rotor_dynamics(t,z)
     w = z(2);                   % Angular speed                 [rad/s]
 
     % Torque [N.m]
-    if t < 2
-        torque = 0;
-    elseif t < 20
+    if t < 20
         torque = 8;
     elseif t < 40
         torque = 4; 
