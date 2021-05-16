@@ -20,7 +20,7 @@ time    = linspace(0,tf,tf*fR); % Time                          [s]
 % Initial conditions [position speed]
 th_0    = 0;                    % Initial angular position      [rad]
 w_0     = 0;                    % Initial angular speed         [rad/s]
-z0      = [0 0];
+z0      = [th_0 w_0];
 
 options = odeset('RelTol',1e-6);
 [T, Z]  = ode45(@rotor_dynamics, time, z0,options);
@@ -86,11 +86,11 @@ close(v);
 function [dz, torque] = rotor_dynamics(t,z)
 
     % Parameters
-    I = 2;                      % Moment of inertia             [kg.m2]
-    c = 1;                      % Viscous friction constant     [N.m.s/rad]
+    I   = 2;                    % Moment of inertia             [kg.m2]
+    c   = 1;                    % Viscous friction constant     [N.m.s/rad]
     
-%     th = z(1);                  % Angular position              [rad]
-    w = z(2);                   % Angular speed                 [rad/s]
+%     th  = z(1);                 % Angular position              [rad]
+    w   = z(2);                 % Angular speed                 [rad/s]
 
     % Torque [N.m]
     if t < 20
